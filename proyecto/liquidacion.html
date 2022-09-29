@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Liquidacion</title>
+</head>
+<body>
+    <header>
+    <div class="banner" id="banner">
+      <div class="buscador">
+        <img src="logoDexter.png">
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <div class="imagenes">
+          <img src="login.png" alt="" class="iconos">
+          <img src="favorito.png" alt="" class="iconos">
+          <img src="carrito.png" alt="" class="iconos">
+      </div>
+      </div>
+    </div>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zapatillas.html">Zapatillas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liquidacion.html">Liquidacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+<div class="BoxPrincipal">
+
+    <aside>
+      <div class="filtros">
+      <h6>Tipo de producto</h6>
+      <input type="checkbox" name="" id="">Remeras <br>
+      <input type="checkbox" name="" id="">Shorts <br>
+      <br>
+      <h6>Género</h6>
+      <input type="checkbox" name="" id="">Hombre <br>
+      <input type="checkbox" name="" id="">Mujer <br>
+      <br>
+      <h6>Categoría</h6>
+      <input type="checkbox" name="" id="">Futbol <br>
+      <input type="checkbox" name="" id="">Basquet <br>
+      <br>
+      <h6>Marca</h6>
+      <input type="checkbox" name="" id="">Lotto <br>
+      <input type="checkbox" name="" id="">Puma <br>
+      <br>
+      <h6>Talle</h6>
+      <input type="checkbox" name="" id="">S <br>
+      <input type="checkbox" name="" id="">L <br>
+      <input type="checkbox" name="" id="">XL <br>
+      <input type="checkbox" name="" id="">XXL <br>
+      <br>
+      <h6>Precio</h6>
+      <input type="checkbox" name="" id="">$2000-$5000 <br>
+      <input type="checkbox" name="" id="">$5000-$10000 <br>
+      <input type="checkbox" name="" id="">$10000 o más 
+      </div>  
+      <br>
+      <br>
+      <div class="descarga">
+        <h6 style="color: white;">Descargate el listado de precios</h6>
+        <a href="Lista_de_precios.xlsx" download="Lista_de_precios.xlsx"><img src="descarga.png"></a>
+      </div>
+      <br>
+      <br>
+      <div class="consultaenvio">
+        <button class="btn btn-primary" onclick="envio()">Consultar Envio</button> <br> <br>
+        <p id="textoenvio" style="color: white; background-color: black; text-align: center;"></p>
+      </div>
+    </aside>
+
+        <section>
+          <div class="card-group">
+            <div class="card">
+              <img src="Remera1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$6.999</h5>
+                <p class="card-text">Remera Puma Photoprint</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$6.899</h5>
+                <p class="card-text">Remera Puma Run Logo Short Sleeve</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$6.999</h5>
+                <p class="card-text">Remera Puma Run Favorite Heather</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="Remera4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$4.099</h5>
+                <p class="card-text">Remera Lotto Dinamico Iv</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$4.099</h5>
+                <p class="card-text">Remera Lotto Hs 22</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$9.499</h5>
+                <p class="card-text">Remera Puma Fade New</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="Remera7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$4.099</h5>
+                <p class="card-text">Remera Lotto Dinamico IV</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$4.099</h5>
+                <p class="card-text">Remera Lotto Hs 22</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Remera9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$9.399</h5>
+                <p class="card-text">Remera Lotto Mirage</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="Short1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$3.999</h5>
+                <p class="card-text">Short Lotto Dinamico IV</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$5.299</h5>
+                <p class="card-text">Short Lotto Logo</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$8.499</h5>
+                <p class="card-text">Short Puma Run Favorite Woven 3</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="Short4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$5.299</h5>
+                <p class="card-text">Short Lotto Dinamico IV</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$3.599</h5>
+                <p class="card-text">Short Lotto Team</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$3.599</h5>
+                <p class="card-text">Short Lotto Smart IV</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="Short7.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$11.999</h5>
+                <p class="card-text">Short Puma Power Logo</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$4.399</h5>
+                <p class="card-text">Short Lotto Squadra III</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="Short9.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$8.999</h5>
+                <p class="card-text">Short Puma Essentials 4" Sweat Tr</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+</div>  
+<aside>
+  <div class="iralinicio">
+    <a href="#banner"><img src="flecha.png" alt="" class="flecha"></a>
+  </div>
+</aside>
+<footer>
+  <div class="footersuperior">
+    <div class="redessociales"> 
+        <h5>Redes Sociales</h5>
+          <img src="twitter.png" alt="" class="redes"><H8><a href="https://twitter.com/dexter_arg" onclick="saliendo()"> Twitter</a></H8> <br>
+          <img src="facebook.png" alt="" class="redes"><h8><a href="https://www.facebook.com/dexter.arg/" onclick="saliendo()"> Facebook</a></h8> <br>
+          <img src="instagram.png" alt="" class="redes"><h8><a href="https://www.instagram.com/dexterarg/" onclick="saliendo()"> Instagram</a></h8>
+    </div> 
+    <div class="atencionalcliente">
+        <h5>Centro de Atencion al cliente</h5>
+        <h8>Lunes a Viernes de 9 a 20 hs / Sábado de 9 a 17 hs</h8> <br>
+          <img src="email.png" alt="" class="redes"><h8><a href="contacto.html"> Contacto</a></h8> <br>
+          <img src="whatsapp.png" alt="" class="redes"><h8> <a href="https://api.whatsapp.com/send?phone=+5493364675799&text=Bienvenidos a Dexter Shop"> WhatsApp</a></h8> <br>
+          <img src="llamadatelefonica.png" alt="" class="redes"><h8> 0810-888-3398</h8> 
+    </div>
+  </div>
+    
+      <div class="footerinferior"> 
+        <img src="Dexter_Logo.png" alt="" class="dexterlogo"><h8 style="color: white;">© Copyright - 2017 - 2022 www.dexter.com.ar, TODOS LOS DERECHOS RESERVADOS. Las fotos contenidas en este site,
+          el logotipo y las marcas son propiedad de Framulari, Ciro. Está prohibida la reproducción total o parcial, 
+          sin la expresa autorización de la administradora de la tienda virtual. Dexter, 
+          empresa perteneciente al grupo DABRA S.A. con domicilio en San Nicolas de los Arroyos, de la Provincia de Buenos Aires – Argentina.</h8>
+      </div> 
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="zapatillas.js"></script>
+</body>
+</html>

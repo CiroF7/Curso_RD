@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Zapatillas</title>
+</head>
+<body>
+    <header>
+    <div class="banner" id="banner">
+      <div class="buscador">
+        <img src="logoDexter.png">
+        
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <div class="imagenes">
+          <img src="login.png" alt="" class="iconos">
+          <img src="favorito.png" alt="" class="iconos">
+          <img src="carrito.png" alt="" class="iconos">
+      </div>
+      </div>
+    </div>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zapatillas.html">Zapatillas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liquidacion.html">Liquidacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+<div class="BoxPrincipal">
+
+    <aside>
+    <div class="filtros">
+      <h6>Género</h6>
+      <input type="checkbox" name="" id="">Masculino <br>
+      <input type="checkbox" name="" id="">Femenino <br>
+      <br>
+      <h6>Categoría</h6>
+      <input type="checkbox" name="" id="">Basicos <br>
+      <input type="checkbox" name="" id="">Moda <br>
+      <br>
+      <h6>Marca</h6>
+      <input type="checkbox" name="" id="">Adidas <br>
+      <input type="checkbox" name="" id="">Nike <br>
+      <br>
+      <h6>Talle</h6>
+      <input type="checkbox" name="" id="">36 <br>
+      <input type="checkbox" name="" id="">38 <br>
+      <input type="checkbox" name="" id="">40 <br>
+      <input type="checkbox" name="" id="">42 <br>
+      <br>
+      <h6>Precio</h6>
+      <input type="checkbox" name="" id="">$5000-$10000 <br>
+      <input type="checkbox" name="" id="">$10000-$15000 <br>
+      <input type="checkbox" name="" id="">$15000 o más 
+    </div>
+    <br>
+    <br>
+    <div class="descarga">
+      <h6 style="color: white;">Descargate el listado de precios</h6>
+      <a href="Lista_de_precios.xlsx" download="Lista_de_precios.xlsx"><img src="descarga.png"></a>
+    </div>
+    <br>
+    <br>
+    <div class="consultaenvio">
+      <button class="btn btn-primary" onclick="envio()">Consultar Envio</button> <br> <br>
+      <p id="textoenvio" style="color: white; background-color: black; text-align: center;"></p>
+    </div>
+  </aside>
+
+        <section>
+          <div class="card-group">
+            <div class="card">
+              <img src="NikeAirMaxExcee.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$43.099</h5>
+                <p class="card-text">Zapatillas Nike Air Max Excee</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="NikeCourtRoyale.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$24.799</h5>
+                <p class="card-text">Zapatillas Nike Court Royale 2</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="NikeReposto.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$29.099</h5>
+                <p class="card-text">Zapatillas Nike Reposto</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="AdidasBreaknet.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$19.949</h5>
+                <p class="card-text">Zapatillas adidas Breaknet</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="AdidasCoreracer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$15.999</h5>
+                <p class="card-text">Zapatillas adidas Coreracer</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="AdidasGamercourt2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$20.999</h5>
+                <p class="card-text">Zapatillas adidas Gamecourt 2</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+          <div class="card-group">
+            <div class="card">
+              <img src="AdidasOzelle.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$24.199</h5>
+                <p class="card-text">Zapatillas adidas Ozelle</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="NikeAirMaxIntrlk75.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$34.599</h5>
+                <p class="card-text">Zapatillas Nike Air Max Intrlk 75</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="NikeCourtRoyale2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">$25.199</h5>
+                <p class="card-text">Zapatillas Nike Court Royale 2 Next Nature</p>
+                <a href="" class="botonCarrito">SUMAR AL CARRITO</a> 
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+</div>  
+<aside>
+  <div class="iralinicio">
+    <a href="#banner"><img src="flecha.png" alt="" class="flecha"></a>
+  </div>
+</aside>
+<footer>
+  <div class="footersuperior">
+    <div class="redessociales"> 
+        <h5>Redes Sociales</h5>
+          <img src="twitter.png" alt="" class="redes"><H8><a href="https://twitter.com/dexter_arg" onclick="saliendo()"> Twitter</a></H8> <br>
+          <img src="facebook.png" alt="" class="redes"><h8><a href="https://www.facebook.com/dexter.arg/" onclick="saliendo()"> Facebook</a></h8> <br>
+          <img src="instagram.png" alt="" class="redes"><h8><a href="https://www.instagram.com/dexterarg/" onclick="saliendo()"> Instagram</a></h8>
+    </div> 
+    <div class="atencionalcliente">
+        <h5>Centro de Atencion al cliente</h5>
+        <h8>Lunes a Viernes de 9 a 20 hs / Sábado de 9 a 17 hs</h8> <br>
+          <img src="email.png" alt="" class="redes"><h8><a href="contacto.html"> Contacto</a></h8> <br>
+          <img src="whatsapp.png" alt="" class="redes"><h8> <a href="https://api.whatsapp.com/send?phone=+5493364675799&text=Bienvenidos a Dexter Shop"> WhatsApp</a></h8> <br>
+          <img src="llamadatelefonica.png" alt="" class="redes"><h8> 0810-888-3398</h8> 
+    </div>
+  </div>
+    
+      <div class="footerinferior"> 
+        <img src="Dexter_Logo.png" alt="" class="dexterlogo"><h8 style="color: white;">© Copyright - 2017 - 2022 www.dexter.com.ar, TODOS LOS DERECHOS RESERVADOS. Las fotos contenidas en este site,
+          el logotipo y las marcas son propiedad de Framulari, Ciro. Está prohibida la reproducción total o parcial, 
+          sin la expresa autorización de la administradora de la tienda virtual. Dexter, 
+          empresa perteneciente al grupo DABRA S.A. con domicilio en San Nicolas de los Arroyos, de la Provincia de Buenos Aires – Argentina.</h8>
+      </div> 
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="zapatillas.js"></script>
+</body>
+</html>
